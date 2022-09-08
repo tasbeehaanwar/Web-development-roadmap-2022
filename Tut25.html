@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position absolute, relative, fixed and sticky in CSS</title>
+    <style>
+      /* position: absolute, relative, fixed and sticky , static(by default) */
+      .box {
+        display: inline-block;
+        border: 2px solid grey;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+      }
+      #box1 {
+        /* Relative: It set the box's Position relative to its Normal position and when you place ur box left to right it will  leave a gap between its Normal position */
+/*        
+        position: relative;
+        top: 20px;
+        left: 32px; */
+
+        /* Absolute: It set the box's Position relative to its Normal position and when you place ur box left to right it will not leave a gap between its Normal position */
+        /* position: absolute;
+        top: 20px;
+        left: 32px;*/
+        /* fixed: Positions the element relative to the browser window; */
+        /* position: fixed;
+        position: fixed;
+        /* right: 4px;
+        bottom: 4px; */
+        
+        /* sticky: Positions the element relative to the users scroll position */
+        position: sticky;
+        right: 4px;
+        bottom: 4px;
+      } 
+      #box2 {
+      }
+      #box3 {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+  </body>
+</html>

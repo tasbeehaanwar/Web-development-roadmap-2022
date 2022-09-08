@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <style>
+      /* *{} Star slector is a universal slector used for all */
+      * {
+        color: white;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: cursive;
+      }
+      .container {
+        width: 920px;
+        border: 3px solid rgb(154, 120, 120);
+        margin: auto; /*If you want to align in center we use margin auto*/
+        border-color: bisque;
+      }
+      .items {
+        border: 2px solid grey;
+        margin: 10px 10px;
+        padding: 10px 10p;
+        background-color: rgb(174, 181, 181);
+        height: 20%;
+        width: 900px;
+      }
+
+      #fruits {
+        float: left;
+        width: 48%;
+      }
+      #computers {
+        float: left;
+        width: 48%;
+        height: autoS;
+      }
+      #stationary {
+        /* float: left; */
+        clear: left;
+        width: 48%;
+      }
+      p {
+        text-align: right;
+        text-align: justify;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="fruits" class="items">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut
+          ullam in architecto rerum ut ad tempore fuga repellendus. Voluptatum
+          hic vitae porro voluptates ab quisquam temporibus facere vel vero!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo magni
+          illo velit aperiam! Error tempora similique totam aliquid perspiciatis
+          praesentium magni aliquam!
+        </p>
+      </div>
+
+      <div id="computers" class="items">
+        <h3>Computers</h3>
+        <p id="fruitspara" class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut
+          ullam in architecto rerum ut ad tempore fuga repellendus. Voluptatum
+          hic vitae porro voluptates ab quisquam temporibus facere vel vero!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aperiam
+          magni recusandae maxime. Cumque nemo doloribus quas laudantium
+          incidunt similique rerum corrupti!
+        </p>
+      </div>
+
+      <div id="stationary" class="items">
+        <h3>Stationary</h3>
+        <p id="fruitspara" class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut
+          ullam in architecto rerum ut ad tempore fuga repellendus. Voluptatum
+          hic vitae porro voluptates ab quisquam temporibus facere vel vero!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

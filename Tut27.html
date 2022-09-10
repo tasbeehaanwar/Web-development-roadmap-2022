@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & z-index Explained</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color : black;
+        }
+        #box2{
+            /* display none will hide the element but do not leave space */
+            display: none;
+            background-color : yellow;
+            /* visibility will hide the element but leave space of element */
+            /* visibility: hidden; Element will be hidden after hiding visibility */
+        }
+        #box3{
+            /* z index  works only with relative, absolute,sticky,fixed position and will show some change called z index*/
+            position: relative;
+            top: 59px;
+            background-color : rgb(203, 24, 24);
+        }
+        #box4{
+            /* position: relative; */
+            /* top: 300px; */
+            z-index: -44px;
+            background-color : yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*5    $*4 will return ID index 1 2 3 4  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <input type="text" name="" id="">
+    
+    <div class="box" id="box4"></div>
+</body>
+</html>

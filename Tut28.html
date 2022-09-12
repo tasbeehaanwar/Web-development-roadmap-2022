@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      .container {
+        height: 355px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        /*Flex Properties For Flex Container*/
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+        /* To make your flex box responsive we use flexwrap */
+        /* flex-wrap: wrap; 
+            flex-wrap: wrap-reverse; */
+
+        /* Shorthand to write set both properties direction of flex or wrap */
+        /* flex-flow: column wrap; */
+
+        /* Justify Content Properties */
+        /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+        /* align-items: Properties */
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch;
+      }
+      /* Flex Properties For Items */
+      .items {
+        background-color: tomato;
+        border: 2px solid rgb(143, 1, 1);
+        margin: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is FlexBox Tutorials</h1>
+    <div class="container">
+      <div class="items" id="box1">Box 1</div>
+      <div class="items" id="box2">Box 2</div>
+      <div class="items" id="box3">Box 3</div>
+      <!-- <div class="items" id="box4">Box 4</div> -->
+    </div>
+  </body>
+</html>
